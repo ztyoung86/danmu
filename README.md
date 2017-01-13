@@ -29,4 +29,4 @@ python run.py <douyu | panda> <room_id>
    
 ## 运行画面
 
-![](https://camo.githubusercontent.com/babf79f7577e43c7f8be20ec8715186569cc709e/687474703a2f2f3778726970342e636f6d312e7a302e676c622e636c6f7564646e2e636f6d2f64616e6d752f64656d6f2e706e673f696d616765566965772f322f772f3430302f)
+![](http://pic-pool.qiniudn.com/danmu.gif)
