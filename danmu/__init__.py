@@ -19,7 +19,7 @@ class DanMuClient(object):
         self.__client       = None
         self.__functionDict = {'default': lambda x: 0}
         self.__isRunning    = False
-        if 'http://' == url[:7]:
+        if 'http' == url[:4]:
             self.__url = url
         else:
             self.__url = 'http://' + url

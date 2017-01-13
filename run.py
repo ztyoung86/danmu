@@ -2,12 +2,27 @@ import time, sys
 
 from danmu import DanMuClient
 
+
 def pp(msg):
     print(msg.encode(sys.stdin.encoding, 'ignore').
         decode(sys.stdin.encoding))
 
-dmc = DanMuClient('https://www.douyu.com/32892')
-if not dmc.isValid(): print('Url not valid')
+if len(sys.argv) != 3:
+    print "arguments invalid!"
+    exit(1)
+
+danmu_plat = {
+    'douyu': 'https://www.douyu.com/',
+    'panda': 'http://www.panda.tv/'
+}
+
+plat_url = danmu_plat[sys.argv[1]]+str(sys.argv[2])
+print 'live url:',plat_url
+
+dmc = DanMuClient(plat_url)
+if not dmc.isValid():
+    print('Url not valid')
+    exit(1)
 
 @dmc.danmu
 def danmu_fn(msg):
