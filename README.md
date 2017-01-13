@@ -6,7 +6,7 @@
 
 by Albert Yang
 
-## *nix 系统运行方法
+## Linux / macOS 系统运行方法
 
 ```bash
 source venv/bin/activate
