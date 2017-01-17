@@ -13,7 +13,8 @@ if len(sys.argv) != 3:
 
 danmu_plat = {
     'douyu': 'https://www.douyu.com/',
-    'panda': 'http://www.panda.tv/'
+    'panda': 'http://www.panda.tv/',
+    'zhanqi': 'http://www.zhanqi.tv/'
 }
 
 plat_url = danmu_plat[sys.argv[1]]+str(sys.argv[2])
